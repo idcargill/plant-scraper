@@ -1,10 +1,18 @@
-import { plantDataByTextSearch, getPlantUrlFromHtml } from "./searchByText";
-import { getPlantTableData } from "./getPlantTableData";
-import { fetchHTML } from "./fetchHTML";
+import { PlantInfoRaw} from './models';
+
+import { 
+  fetchHTML, 
+  getPlantPageUrl, 
+  getPlantTableData, 
+  buildSearchUrl,
+  getPlantByTextSearch,
+   } from "./utils";
 
 export {
-  getPlantUrlFromHtml,
+  PlantInfoRaw,
   fetchHTML,
-  plantDataByTextSearch,
+  getPlantPageUrl,
   getPlantTableData,
+  buildSearchUrl,
+  getPlantByTextSearch,
 }
